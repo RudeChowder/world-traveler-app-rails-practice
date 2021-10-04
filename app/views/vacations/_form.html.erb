@@ -1,0 +1,16 @@
+<%= form_for vacation do |form| %>
+  <%= form.label :country %>
+  <%= form.collection_select :country_id, countries, :id, :name, prompt: true %>
+  <br>
+
+  <%= form.label :traveler %>
+  <%= form.collection_select :traveler_id, travelers, :id, :name, prompt: true %>
+  <br>
+
+  <%= form.label :favorite %>
+  <%= form.check_box :favorite %>
+  <br>
+
+  <%= form.submit %>
+
+<% end %>

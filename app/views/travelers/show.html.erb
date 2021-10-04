@@ -1,0 +1,7 @@
+<h2><%= @traveler.name %></h2>
+<h3>Age: <%= @traveler.age %></h3>
+
+<h4>Favorite Countries</h4>
+<ul>
+  <%= render partial: "countries/country", collection: @countries %>
+</ul>
